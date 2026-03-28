@@ -1,15 +1,75 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+/*Criando as Cartas do Super Trunfo. 
+Sistema para cadastrar as informações das cartas*/ 
 
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
 
-  // Área para entrada de dados
+    // Declaração das variáveis para as duas cartas do Super Trunfo.
+    //Desafio nível novato
+    
+    char estado1, estado2; 
+    char codigo1[4], codigo2[4];
+    char nomeCidade1[50], nomeCidade2[50];
+    int populacao1, populacao2;
+    float area1, area2;
+    float pib1, pib2;
+    int pontosTuristicos1, pontosTuristicos2;
 
-  // Área para exibição dos dados da cidade
+    // Entrada de dados da carta 1.
+    printf("Insira os dados da Carta 1 \n");
+    printf("Estado (Digite uma letra de A a H): "); // representando um dos oito estados.
+    scanf(" %c", &estado1); //recebe a letra escolhida pelo usuario 
+    printf("Código da Carta - Digite um número de 01 a 04: ");
+    scanf("%s", codigo1);   //recebe o numero do codigo.
+    printf("Nome da Cidade: ");
+    scanf(" %s", nomeCidade1);  // recebe dados informando o nome da cidade
+    printf("População - número de habitantes da cidade: "); 
+    scanf("%d", &populacao1);   // recebe dados com o número de habitantes da cidade
+    printf("Área da cidade em km²: ");
+    scanf("%f", &area1);    // recebe dados do Tamanho da A área da cidade em quilômetros quadrados
+    printf("PIB: ");
+    scanf("%f", &pib1); // recebe dados do valor do PIB. Ogrigatorio receber todos os digitos
+    printf("Número de Pontos Turísticos: ");
+    scanf("%d", &pontosTuristicos1);    // recebe dados com a quantidade de pontos turísticos na cidade.
 
-return 0;
-} 
+    // Exibição dos dados da carta 1.
+    printf("\nCarta 1\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %c%s\n", estado1, codigo1);
+    printf("Nome da Cidade: %s\n", nomeCidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+
+    // Entrada de dados da carta 2.
+    printf("\nInsira os dados da Carta 2 \n");
+    printf("Estado (Digite uma letra de A a H): ");    // representando um dos oito estados.
+    scanf(" %c", &estado2); //recebe a letra escolhida pelo usuario. 
+    printf("Código da Carta - Digite um número de 01 a 04: ");
+    scanf("%s", codigo2);   //recebe o numero do codigo.
+    printf("Nome da Cidade: ");
+    scanf(" %s", nomeCidade2);  // recebe dados informando o nome da cidade.
+    printf("População - número de habitantes da cidade: ");
+    scanf("%d", &populacao2);   // recebe dados com o número de habitantes da cidade.
+    printf("Área da cidade em km²: ");
+    scanf("%f", &area2);    // recebe dados do Tamanho da A área da cidade em quilômetros quadrados.
+    printf("PIB: ");
+    scanf("%f", &pib2); // recebe dados do valor do PIB. Ogrigatorio receber todos os digitos
+    printf("Número de Pontos Turísticos: ");
+    scanf("%d", &pontosTuristicos2);// recebe dados com a quantidade de pontos turísticos na cidade.
+
+    // Exibição dos dados da carta 2.
+    printf("\nCarta 2\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %C%s\n", estado2, codigo2);
+    printf("Nome da Cidade: %s\n", nomeCidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+    
+
+    return 0;
+}
