@@ -15,6 +15,9 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int pontosTuristicos1, pontosTuristicos2;
+    //adicionado - Desafio: nível aventureiro
+    float densidadePopulacional1, densidadePopulacional2;
+    float pibPerCapita1, pibPerCapita2;
 
     // Entrada de dados da carta 1.
     printf("Insira os dados da Carta 1 \n");
@@ -32,6 +35,9 @@ int main() {
     scanf("%f", &pib1); // recebe dados do valor do PIB. Ogrigatorio receber todos os digitos
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos1);    // recebe dados com a quantidade de pontos turísticos na cidade.
+    // Cálculo da Densidade Populacional e PIB per Capita  - Carta 1.
+    densidadePopulacional1 = (float) populacao1 / area1;
+    pibPerCapita1 = (float) pib1 / populacao1; // PIB em reais
 
     // Exibição dos dados da carta 1.
     printf("\nCarta 1\n");
@@ -42,6 +48,9 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+    //adicionado - Desafio: nível aventureiro
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional1);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
 
     // Entrada de dados da carta 2.
     printf("\nInsira os dados da Carta 2 \n");
@@ -59,6 +68,9 @@ int main() {
     scanf("%f", &pib2); // recebe dados do valor do PIB. Ogrigatorio receber todos os digitos
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos2);// recebe dados com a quantidade de pontos turísticos na cidade.
+    // Cálculo da Densidade Populacional e PIB per Capita - Carta 2.
+    densidadePopulacional2 = (float) populacao2 / area2;
+    pibPerCapita2 = (float) pib2 / populacao2; // PIB em reais
 
     // Exibição dos dados da carta 2.
     printf("\nCarta 2\n");
@@ -69,6 +81,9 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+    //adicionado - Desafio: nível aventureiro
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
+    printf("PIB per Capita: %.2f reais\n\n", pibPerCapita2);
     
 
     return 0;
