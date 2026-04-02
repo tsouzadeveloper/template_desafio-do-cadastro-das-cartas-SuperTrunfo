@@ -18,7 +18,7 @@ int main() {
     //adicionado - Desafio: nível aventureiro
     float densidadePopulacional1, densidadePopulacional2;
     float pibPerCapita1, pibPerCapita2;
-    //adicionado -  Desafio: nível Mestre
+    //adicionado - Tema 2 Desafio: nível Mestre
     float superpoder1, superpoder2;
     superpoder1 = (int) populacao1 + area1 + pib1 + pontosTuristicos1 + (1 / densidadePopulacional1);
     superpoder2 = (int) populacao2 + area2 + pib2 + pontosTuristicos2 + (1 / densidadePopulacional2);
@@ -89,28 +89,49 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
     printf("PIB per Capita: %.2f reais\n\n", pibPerCapita2);
 
-    //adicionado - Desafio: nível aventureiro
+    //adicionado - Tema 2 Desafio: nível aventureiro
     printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
     printf("PIB per Capita: %.2f reais\n\n", pibPerCapita2);
 
-    /*comparacao de atributos das carta1 vs carta2
-    utilizando operadores relacionais*/
+ //adicionado - Tema 3 Desafio: nível novato
 
-    printf("comparacao carta1 v carta2 \n");
-    printf("resultado 1 a carta1 ganha, resultado 0 a carta2 ganha \n\n");
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
+    printf("PIB per Capita: %.2f reais\n\n", pibPerCapita2);
 
-    printf("Atributo Populacão carta 1 > carta 2: %d\n", populacao1 > populacao2);
-    printf("Atributo Area carta 1 > carta 2: %d\n", area1 > area2);
-    printf("Atributo PIB carta 1 > carta 2: %d\n", pib1 > pib2) ;
-    printf("Atributo Ponto Turistico carta 1 > carta 2: %d\n", pontosTuristicos1 > pontosTuristicos2) ;
-    printf("Atributo Dencidade Populacional carta 1 < carta 2: %d\n", densidadePopulacional1 < densidadePopulacional2) ;
-    printf("Atributo Super Poder carta 1 > carta 2: %d\n",superpoder1 > superpoder2) ;
+    printf("\n Comparação de cartas - batalha1\n");
+    printf("Atributo: Populacão \n");
+    printf("Carta 1: %lu\n", populacao1 );
+    printf("Carta 2: %lu\n", populacao2 );
+    
+    if(populacao1 > populacao2){
+        printf("Resultado: Carta 1 %s venceu!\n",nomeCidade1);
+    } else {
+        printf("Resultado: Carta 2 %s venceu!\n",nomeCidade2);
+    }
+
+    printf("\n Comparação de cartas - batalha2\n");
+    printf("Atributo: Area \n");
+    printf("Carta 1:%.2f km²\n", area1 );//Área: %.2f km²\n", area2
+    printf("Carta 2:%.2f km²\n", area2 );
+    
+    if(area1 > area2){
+        printf("Resultado: Carta 1 %s venceu!\n",nomeCidade1);
+    } else {
+        printf("Resultado: Carta 2 %s venceu!\n",nomeCidade2);
+    }
+
+    printf("\n Comparação de cartas - batalha3\n");
+    printf("Atributo: Densidade Populacional \n");
+    printf("Carta 1: %.2f hab/km²\n", densidadePopulacional1 );-
+    printf("Carta 2: %.2f hab/km²\n", densidadePopulacional2 );
+    
+    if(densidadePopulacional1 < densidadePopulacional2){
+        printf("Resultado: Carta 1 %s venceu!\n",nomeCidade1);
+    } else {
+        printf("Resultado: Carta 2 %s venceu!\n",nomeCidade2);
+    }
 
     printf("Fim");
    
-    
-   
-    
-
     return 0;
 }
